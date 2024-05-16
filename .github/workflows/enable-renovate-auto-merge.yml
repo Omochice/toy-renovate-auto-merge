@@ -3,6 +3,7 @@ name: Enable auto merge
 
 on:
   - push
+  - pull_request
 
 jobs:
   enable-auto-merge:

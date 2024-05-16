@@ -8,6 +8,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Omochice/.github/workflows/renovate-auto-merge.yml@main
+    uses: Omochice/.github/.github/workflows/enable-renovate-auto-merge.yml@main
     with:
       pr_number: ${{github.event.pull_request.number}}

@@ -1,0 +1,14 @@
+
+name: Enable auto merge
+
+on:
+  - push
+
+jobs:
+  enable-auto-merge:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - run: |
+          echo "${{contains(github.event.pull_request.body, ' **Automerge**: Enabled.')}}"
+          echo "${{github.event.pull_request.user.login}}"

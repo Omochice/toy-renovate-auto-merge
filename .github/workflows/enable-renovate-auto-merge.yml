@@ -13,4 +13,4 @@ jobs:
       - run: |
           echo "${{contains(github.event.pull_request.body, ' **Automerge**: Enabled.')}}"
       - run: |
-          echo "${{github.event.pull_request.user.login}}"
+          echo "${{github.event.pull_request.user.login == 'renovate[bot]'}}"
